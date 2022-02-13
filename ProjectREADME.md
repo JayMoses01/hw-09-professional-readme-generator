@@ -1,8 +1,8 @@
 
-  # test
+  # Project Title: Title
 
   ## Description
-  test
+  description
 
   ## Table of Contents
   * [Description](#description)
@@ -14,24 +14,26 @@
   * [Questions](#questions)
 
   ## Installation
-  test
+  Install!
 
   ## Usage
-  test
+  Use!
 
   ## License
   MIT
 
   ## Contributing
-  test
+  Contribute!
 
   ## Tests
-  test
+  Test!
 
   ## Questions
-  My GitHub Username: test
+  Please visit my GitHub profile to view this project repository (details below).
+  
+  GitHub Username: JayMoses01
 
-  My GitHub URL: test
+  GitHub URL: Jay.com
 
-  My LinkedIn URL: test@test.com
+  If you have any questions, please reach out via email at jay@test.com.
 

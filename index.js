@@ -10,7 +10,7 @@ const readmePrompts = () => {
       {
         type: 'input',
         name: 'projectTitle',
-        message: 'What is your project name?',
+        message: 'What is the title of your project?',
       },
       {
         type: 'input',
@@ -55,7 +55,7 @@ const readmePrompts = () => {
       },
       {
         type: 'input',
-        name: 'linkedin',
+        name: 'email',
         message: 'What is your email address?',
       },
     ]);
