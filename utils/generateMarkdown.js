@@ -1,6 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -14,15 +16,41 @@ function renderLicenseSection(license) {}
 function generateMarkdown(answers) {
   return `
   # ${answers.projectTitle}
-  ## ${answers.description}
-  ## ${answers.installation}
-  ## ${answers.usage}
-  ## ${answers.contribution}
-  ## ${answers.test}
-  ## ${answers.license}
-  ## ${answers.github}
-  ## ${answers.githubUrl}
-  ## ${answers.linkedin}
+
+  ## Description
+  ${answers.description}
+
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+
+  ## Installation
+  ${answers.installation}
+
+  ## Usage
+  ${answers.usage}
+
+  ## License
+  ${answers.license}
+
+  ## Contributing
+  ${answers.contribution}
+
+  ## Tests
+  ${answers.test}
+
+  ## Questions
+  My GitHub Username: ${answers.github}
+
+  My GitHub URL: ${answers.githubUrl}
+
+  My LinkedIn URL: ${answers.linkedin}
+
 `;
 }
 
