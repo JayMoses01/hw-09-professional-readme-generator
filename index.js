@@ -15,29 +15,30 @@ const readmePrompts = () => {
       {
         type: 'input',
         name: 'description',
-        message: 'Project description: ',
+        message: 'Project description:',
       },
       {
         type: 'input',
         name: 'installation',
-        message: 'Project installation instructions: ',
+        message: 'Project installation instructions:',
       },
       {
         type: 'input',
         name: 'usage',
-        message: 'Project usage information: ',
+        message: 'Project usage information:',
       },
       {
         type: 'input',
         name: 'contribution',
-        message: 'Contribution guidelines: ',
+        message: 'Contribution guidelines:',
       },
       {
         type: 'input',
         name: 'test',
-        message: 'Test instructions: ',
+        message: 'Test instructions:',
       },
       {
+        // JRM: I used the licenses listed here for this assignment: https://choosealicense.com/licenses/.
         type: 'list',
         name: 'license',
         message: 'License type: ',
