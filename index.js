@@ -41,7 +41,7 @@ const readmePrompts = () => {
         type: 'list',
         name: 'license',
         message: 'License type: ',
-        choices: ["MIT", "Choice 2", "Choice 3"]
+        choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense", "No license"]
       },
       {
         type: 'input',
@@ -62,7 +62,7 @@ const readmePrompts = () => {
   };
 
 
-/* JRM: THIS IS LOW PRIORITY SINCE EVERYTHING ELSE WORKS.
+/*
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     .then((answers) => fs.writeFileSync('ProjectREADME.md', generateMarkdown(answers)))
