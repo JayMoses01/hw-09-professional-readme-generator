@@ -5,7 +5,7 @@
 
 I created a README Markdown file generator with this functionality:
 
-* Upon running "node index.js" in the command line, the user is prompted for information necessary for generating their README file.
+* Upon running "node index.js" in the command line, the user is prompted for information necessary to generate their README file.
 * The following sections will generate containing the user's input:
     * Description
     * Table of Contents
@@ -44,6 +44,7 @@ A sample generated README file can be viewed in assets > ProjectREADME.md or by 
 This application utilizes these technologies:
 
 * Node.js
+* JavaScript
 * Markdown
 
 
