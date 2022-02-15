@@ -1,4 +1,4 @@
-// JRM: License badge variables. I generally used the Markdown license badge syntax from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba. I used the licenses listed here for this assignment: https://choosealicense.com/licenses/.
+// JRM: License badge variables. I generally used the Markdown license badge syntax from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba, although I removed the extra brackets. I used the licenses listed here for this assignment: https://choosealicense.com/licenses/.
 var agplv3 = `![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)`;
 var gnugplv3 = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
 var gnulgplv3 = `![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)`;
@@ -8,8 +8,6 @@ var mit = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
 var boost = `![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)`;
 var unlicense = `![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
 var nolicense = '';
-
-
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -33,9 +31,7 @@ function renderLicenseBadge(answers) {
   } else var badge = nolicense;
 
   return badge;
-
 }
-
 
 // JRM: License link variables. I used the licenses listed here for this assignment: https://choosealicense.com/licenses/. The license links come from the respective link pages.
 var agplv3Link = `https://choosealicense.com/licenses/agpl-3.0/`;
@@ -47,9 +43,6 @@ var mitLink = `https://choosealicense.com/licenses/mit/`;
 var boostLink = `https://choosealicense.com/licenses/bsl-1.0/`;
 var unlicenseLink = `https://choosealicense.com/licenses/unlicense/`;
 var nolicenseLink = '';
-
-
-
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -73,7 +66,6 @@ function renderLicenseLink(answers) {
   } else var link = nolicenseLink;
 
   return link;
-
 }
 
 // JRM: License text variables. I used the licenses listed here for this assignment: https://choosealicense.com/licenses/. The license text come from the respective link pages.
@@ -2237,7 +2229,6 @@ For more information, please refer to <https://unlicense.org>
 `;
 var nolicenseText = '';
 
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(answers) {
@@ -2260,24 +2251,19 @@ function renderLicenseSection(answers) {
   } else var licenseText = nolicenseText;
 
   return licenseText;
-
 }
-
-
-
-
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   return `
   # Project Title: ${answers.projectTitle}
   ${renderLicenseBadge(answers)}
-
-
+  
+  
   ## Description
   ${answers.description}
-
-
+  
+  
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -2286,43 +2272,42 @@ function generateMarkdown(answers) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-
-
+  
+  
   ## Installation
   ${answers.installation}
-
-
+  
+  
   ## Usage
   ${answers.usage}
-
-
+  
+  
   ## License
   ${answers.license}
   ${renderLicenseLink(answers)}
-
-
+  
+  ### License Details
   ${renderLicenseSection(answers)}
-
-
+  
+  
   ## Contributing
   ${answers.contribution}
-
-
+  
+  
   ## Tests
   ${answers.test}
-
-
+  
+  
   ## Questions
   Please visit my GitHub profile to view this project repository (details below).
   
-  GitHub Username: ${answers.github}
+  ### GitHub Username: ${answers.github}
 
-  GitHub URL: ${answers.githubUrl}
+  ### GitHub URL: ${answers.githubUrl}
 
   If you have any questions, please reach out via email at: ${answers.email}.
 
 `;
 }
-
 
 module.exports = generateMarkdown;

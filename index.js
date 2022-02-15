@@ -10,22 +10,22 @@ const readmePrompts = () => {
       {
         type: 'input',
         name: 'projectTitle',
-        message: 'What is the title of your project?',
+        message: 'What is the title of your project/application?',
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Project description:',
+        message: 'Description:',
       },
       {
         type: 'input',
         name: 'installation',
-        message: 'Project installation instructions:',
+        message: 'Installation instructions:',
       },
       {
         type: 'input',
         name: 'usage',
-        message: 'Project usage information:',
+        message: 'Usage information:',
       },
       {
         type: 'input',
@@ -62,22 +62,9 @@ const readmePrompts = () => {
     ]);
   };
 
-
-/*
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    .then((answers) => fs.writeFileSync('ProjectREADME.md', generateMarkdown(answers)))
-    .then(() => console.log('Successfully created Project README file'))
-    .catch((err) => console.error(err));
-}
-*/
-
-
-
-
-
-
-
+// JRM: I commented this part out since I included writing the file in the Init() function below.
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -87,8 +74,6 @@ function init() {
        .catch((err) => console.error(err));
 
 }
-
-
 
 // Function call to initialize app
 init();
