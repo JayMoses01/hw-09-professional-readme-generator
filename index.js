@@ -63,7 +63,7 @@ const readmePrompts = () => {
   };
 
 // TODO: Create a function to write README file
-// JRM: I commented this part out since I included writing the file in the Init() function below.
+// JRM: I commented out this function since I included writing the file in the Init() function below.
 //function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
