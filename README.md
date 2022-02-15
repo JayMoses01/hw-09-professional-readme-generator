@@ -46,7 +46,7 @@ This application utilizes these technologies:
 * Node.js
 * JavaScript
 * Markdown
-
+* The [Inquirer package](https://www.npmjs.com/package/inquirer)
 
 ## Contact information
 
